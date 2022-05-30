@@ -8,6 +8,7 @@ namespace CSClass
 {
     internal class Product
     {
+        // 클래스 생성 방법
         public string name = "노네임";
         public int price;
 
