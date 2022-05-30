@@ -32,7 +32,7 @@ namespace CSClass
             list.Add(22);
             list.Add(33);
             list.Add(44);
-            */
+            */ 
 
             List<int> list = new List<int>() { 52, 273, 32, 42 };
             list.Remove(42);
