@@ -63,6 +63,63 @@ namespace CSClass
             Console.WriteLine(productB);
             Console.WriteLine(productC);
 
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "함기훈", grade = 100 },
+                new Student() { name = "가연우", grade = 100 },
+                new Student() { name = "김유진", grade = 89 },
+                new Student() { name = "김하진", grade = 80 },
+                new Student() { name = "박수연", grade = 101 },
+                new Student() { name = "박혜원", grade = 77 },
+                new Student() { name = "심이진", grade = 100 },
+                new Student() { name = "유예영", grade = 33 },
+                new Student() { name = "윤주희", grade = 22 },
+                new Student() { name = "윤채원", grade = 88 }
+            };
+
+/*
+            students.Add(new Student() { name = "함기훈", grade = 100 });
+            students.Add(new Student() { name = "가연우", grade = 100 });
+            students.Add(new Student() { name = "김유진", grade = 89 });
+            students.Add(new Student() { name = "김하진", grade = 80 });
+            students.Add(new Student() { name = "박수연", grade = 101 });
+            students.Add(new Student() { name = "박혜원", grade = 77 });
+            students.Add(new Student() { name = "심이진", grade = 100 });
+            students.Add(new Student() { name = "유예영", grade = 33 });
+            students.Add(new Student() { name = "윤주희", grade = 22 });
+            students.Add(new Student() { name = "윤채원", grade = 88 });
+*/
+/*
+            foreach (var student in students)
+            {
+                if(student.grade > 60)
+                {
+                    students.Remove(student);
+                }
+            }
+*/
+/*
+            for(int i=0; i<students.Count; i++)
+            {
+                if(students[i].grade > 60)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+*/
+
+            for(int i=students.Count-1; i>=0; i--)
+            {
+                if(students[i].grade > 60)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+
+            foreach (var item in students)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
