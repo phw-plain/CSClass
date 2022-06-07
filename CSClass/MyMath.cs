@@ -22,6 +22,11 @@ namespace CSClass
             return (v < 0) ? -1 * v : v;
         }
 
+        public static double Abs(double v)
+        {
+            return (v < 0) ? -1 * v : v;
+        }
+
         void foo()
         {
             Console.WriteLine("클래스 메서드에서 접근 불가");
