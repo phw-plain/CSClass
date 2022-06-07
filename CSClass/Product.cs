@@ -8,13 +8,27 @@ namespace CSClass
 {
     internal class Product
     {
+        internal static int counter = 0;
+
         // 클래스 생성 방법
         public string name = "노네임";
-        public int price;
+        public int price = 1000;
+        private int id = -1;
+
+        public Product()
+        {
+        }
+
+        public Product(string name, int price)
+        {
+            this.id = ++counter;
+            this.name = name;
+            this.price = price;
+        }
 
         public override string ToString()
         {
-            return this.name + ": " + this.price;
+            return "[" + this.id + "] " + this.name + ": " + this.price;
         }
     }
 }
