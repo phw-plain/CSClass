@@ -143,6 +143,23 @@ namespace CSClass
             Console.WriteLine("세 번째 위치");
 
             Product product = new Product("과자", 1500);
+            productA = null;
+
+            Box box = new Box(10, 20);
+            box.width = 200;
+            box.height = 100;
+            Console.WriteLine(box.getArea());
+
+            // box.setWidth(-10);
+            box.Width = -10;
+            Console.WriteLine(box.getArea());
+
+            Box box2 = new Box(-10, -20);
+            Console.WriteLine(box2.getArea());
+
+
+
+
         }
     }
 }
