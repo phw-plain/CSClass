@@ -61,5 +61,6 @@ namespace CSClass
         {
             return this.width * this.height;
         }
+
     }
 }

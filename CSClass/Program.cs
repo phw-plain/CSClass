@@ -146,7 +146,7 @@ namespace CSClass
             productA = null;
 
             Box box = new Box(10, 20);
-            box.width = 200;
+            box.Width = 200;
             box.height = 100;
             Console.WriteLine(box.getArea());
 
@@ -157,8 +157,14 @@ namespace CSClass
             Box box2 = new Box(-10, -20);
             Console.WriteLine(box2.getArea());
 
-
-
+            Console.WriteLine(Fibonacci.Get(1));
+            Console.WriteLine(Fibonacci.Get(2));
+            Console.WriteLine(Fibonacci.Get(3));
+            Console.WriteLine(Fibonacci.Get(4));
+            Console.WriteLine(Fibonacci.Get(5));
+            Console.WriteLine(Fibonacci.Get(10));
+            Console.WriteLine(Fibonacci.Get(50));
+            Console.WriteLine(Fibonacci.Get(100));
 
         }
     }
