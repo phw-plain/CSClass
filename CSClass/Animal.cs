@@ -18,7 +18,7 @@ namespace CSClass
         {
             Console.WriteLine("쿨쿨");
         }
-        public void Eat()
+        public override void Eat()
         {
             Console.WriteLine("냠냠");
         }
